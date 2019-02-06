@@ -1,6 +1,9 @@
 # IDE
 .vscode
 
+# Linux
+*.swp
+
 # dependencies
 node_modules
 

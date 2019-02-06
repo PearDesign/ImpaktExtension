@@ -9,8 +9,9 @@
   "permissions": [
     "activeTab",
     "declarativeContent",
-    "webNavigation",
-    "storage"
+    "storage",
+		"tabs",
+    "webNavigation"
   ],
   "page_action": {
     "default_popup": "popup.html",
