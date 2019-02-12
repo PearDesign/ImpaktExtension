@@ -1,11 +1,17 @@
 {
   "name": "Impakt",
   "version": "1.0",
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://*.amazon.com/s/*"],
+			"js": ["contentScript.js"]
+		}
+	],
   "description": "The ethical shopping browser companion",
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
   "permissions": [
     "activeTab",
     "declarativeContent",

@@ -1,5 +1,6 @@
-// Fire off on Amazon's search page
-
-chrome.webNavigation.onCompleted.addListener(function() {
-	alert("Test");
-}, {url: [{urlMatches: "https://www.amazon.com/s/*"}]});
+chrome.runtime.onMessage.addListener(
+    function(request, sender, sendResponse) {
+			alert(request.data.ASINList);
+			// alert(request.data.searchBox);
+    }
+);
